@@ -52,7 +52,6 @@ def check_password(user, pwd):
 
 database = 'database.txt'
 generate_and_save_key()  # only use the first time or when we want to change the key
-save_to_database('john', b'panda')
-save_to_database('johnny', b'pandy')
-save_to_database('johnou', b'pandou')
-print(check_password('johnou', b'pandou'))
+save_to_database('john', b'smith')
+save_to_database('johnny', b'smithy')
+print(check_password('johny', b'smithy'))
